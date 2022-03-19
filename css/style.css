@@ -1,0 +1,134 @@
+body {
+    display: grid;
+    background-color: #edf2f4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
+    color: #2b2d42;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 1;
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2b2d42;
+    color: #edf2f4;
+}
+
+#combined_logo {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+#logo {
+    height: 50px;
+}
+
+menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 470px;
+}
+
+button {
+    height: 25px;
+    width: 150px;
+    color:#edf2f4;
+    background-color: #f7941e;
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #edf2f4;
+    color: #f7941e;
+}
+
+button:active {
+    background-color: rgb(197, 197, 197);
+}
+
+.hidden {
+    display: none;
+}
+
+#left_buffer {
+    grid-column: 1/ span 1;
+    grid-row: 2/ span 1;
+}
+
+#home-content {
+    display: flex;
+}
+
+#right_buffer {
+    grid-column: 8 / 8;
+    grid-row: 2/ span 1;
+}
+
+#content {
+    grid-column: 2/ span 6;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+
+}
+
+figure {
+    float: right;
+    width: 50%;
+}
+
+#intext_pic {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+    font-size: 15pt;
+    width: 100%;
+}
+
+ul {
+    font-size: 15pt;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-rows: 150px auto;
+    }
+    #content {
+        display: flex;
+        align-items: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-column: 1/ span 8;
+        grid-row: 2/ span 1;
+    }
+    p {
+        text-align: left;
+    }
+    figure {
+        float: none;
+        width: auto;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

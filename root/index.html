@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/scripts.js"></script>
+    <title>UVRC</title>
+</head>
+<body>
+    <header>
+        <div id="combined_logo">
+            <img src="/images/mountain.png" alt="logo" id="logo">
+            <h1>Rock Climbing</h1>
+        </div>
+        <menu>
+            <li><button onclick="showHome()" id="home_button">Home</button></li>
+            <li><button onclick="showUtah()" id="utah_button">Climbing in Utah</button></li>
+            <li><button onclick="showContact()" id="contact_button">Contact</button></li>
+        </menu>
+    </header>
+    <div id="left_buffer"></div>
+    <div id="content">
+        <div id="home_content">
+            <h2>History of Rock Climbing</h2>
+            <p>
+                Rock climbing has only been practice as a sport relatively recently, but people have been climbing rock
+                faces for millenia prior. Paintings dating back to 200 BC in China depict people rock climbing. Even closer
+                to home here in the US, the ancestral puebloan natives are also thought to have been excelent climbers.
+            </p>
+            <figure>
+                <img src="/images/sport climbing gear.webp" alt="modern rock climbing equipment" id="intext_pic">
+                <figcaption>Modern climbing equipment</figcaption>
+            </figure>
+            <p>
+                Rock climbing has evolved geatly since those times. We use a lot of modern gear and more advanced tools
+                to assist in climbing. Most notably, the reasons we climb has evolved, people do it because they can. 
+                in the past the ancestral puebloans may have been climbers so they could build their homes that we see
+                like at the Cliff Palace of Mesa Verde National Park. Today though, climbing is mostly reserved for sport
+                and adventure. 
+            </p>
+            <iframe width="869" height="489" src="https://www.youtube.com/embed/uUrrOdzKB3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="utah_content" class="hidden">
+            <h2>Rock Climbing in Utah</h2>
+            <p>
+                Given that the majority of Utah's population centers in the Salt Lake valley and the Utah are smashed
+                right next to the Wasatch mountain range, it should come as no surprise that there are thousands of 
+                rock climbing spots within nearly half an hour from anywhere. Some of the best places to go climbing 
+                here in the heart of Utah are the Big and Little Cottonwood canyons. These canyons contain smooth steep
+                quartzite rock faces that reach several hundred, all contanying thousands of set climbing routes.
+            </p>
+            <figure>
+                <img src="/images/south ridge mt superior.jpeg" alt="climber on ridge" class="intext_pic">
+                <figcaption>A climber on the ridge of Mt. Superior in Little Cottonwood Canyon.</figcaption>
+            </figure>
+            <p>
+                Some of the earliest climbing in the Cottonwood canyons that we know of dates back to the 1930's, and it 
+                isn't till the 1960's and 1970's when some of the more popular routes in the canyons were established.
+            </p>
+            <p>
+                Utah is such a fantastic area for rock climbing, that one of the biggest and most popular rock climbing 
+                equipment companies is headquartered out of Salt Lake City. That company being Black Diamond Equipment.
+            </p>
+        </div>
+        <div id="contact_content" class="hidden">
+            <h2>Contact</h2>
+            <figure>
+                <img src="/images/me.jpg" alt="me" id="intext_pic">
+                <figcaption>Myself climbing in American Fork Canyon</figcaption>
+            </figure>
+            <ul>
+                <li>Author: Michael Calcamuggio</li>
+                <li>Email: <a href="mailto: 10927160@uvu.edu">10927160@uvu.edu</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="right_buffer"></div>
+</body>
+</html>

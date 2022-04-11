@@ -1,3 +1,10 @@
+/*
+    added button for video
+    centered video in the webpage when visible
+    added more documentation and comments to code
+
+*/
+
 body {
     display: grid;
     background-color: #edf2f4;
@@ -8,6 +15,7 @@ body {
     padding: 0;
 }
 
+/* page header container */
 header {
     grid-column: 1 / span 8;
     grid-row: 1 / span 1;
@@ -20,26 +28,36 @@ header {
     color: #edf2f4;
 }
 
+/* container for the image in the header and page title */
 #combined_logo {
     display: flex;
     align-items: center;
 }
 
+/* page title */
 h1 {
     padding-left: 10px;
 }
 
+/* logo image in the webpage header */
 #logo {
     height: 50px;
 }
 
+/* nav menu on the header */
 menu {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    width: 470px;
+    flex-wrap: wrap;
+    width: 700px;
 }
 
+menu > li {
+    padding: 5px;
+}
+
+/* container for the buttons of he nav bar */
 button {
     height: 25px;
     width: 150px;
@@ -59,10 +77,12 @@ button:active {
     background-color: rgb(197, 197, 197);
 }
 
+/* hides the content that is not being displayed */
 .hidden {
     display: none;
 }
 
+/* buffer to the left of the content */
 #left_buffer {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
@@ -72,18 +92,26 @@ button:active {
     display: flex;
 }
 
+/* buffer to the right of the content  */
 #right_buffer {
     grid-column: 8 / 8;
     grid-row: 2/ span 1;
 }
 
+/* conatiner for the content */
 #content {
     grid-column: 2/ span 6;
     grid-row: 2/ span 1;
-    padding-top: 20px;
-
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
+a {
+    color: #2b2d42;
+}
+
+/* image containers */
 figure {
     float: right;
     width: 50%;
@@ -104,9 +132,13 @@ ul {
     list-style-type: none;
 }
 
+/* tablet view trigger */
 @media only screen and (max-width: 768px) {
     body{
         grid-template-rows: 150px auto;
+    }
+    menu {
+        width: 400px;
     }
     #content {
         display: flex;

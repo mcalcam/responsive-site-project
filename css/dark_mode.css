@@ -1,0 +1,13 @@
+body {
+    background-color: #152028;
+    color: #edf2f4; 
+    font-weight: 200;
+}
+
+a {
+    color: #edf2f4;
+}
+
+img {
+    filter: brightness(.9) contrast(1.1);
+}

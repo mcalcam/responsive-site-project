@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/scripts.js"></script>
     <link rel="mask-icon" href="/images/icon.png">
-    <!-- <link rel="stylesheet" href="/css/dark_mode.css"> -->
     <title>UVRC</title>
 </head>
 <body>
@@ -21,6 +20,7 @@
             <li><button onclick="showUtah()" id="utah_button">Climbing in Utah</button></li>
             <li><button onclick="showContact()" id="contact_button">Contact</button></li>
             <li><button onclick="showVideo()" id="video_button">Video</button></li>
+            <li><a href="dark.html"><button id="dark_button">Dark Mode</button></a></li>
         </menu>
     </header>
     <div id="left_buffer"></div>
@@ -33,7 +33,7 @@
                 to home here in the US, the ancestral puebloan natives are also thought to have been excelent climbers.
             </p>
             <figure>
-                <img src="/images/sport climbing gear.webp" alt="modern rock climbing equipment" id="intext_pic">
+                <img src="/images/sport climbing gear.webp" alt="modern rock climbing equipment" class="intext_pic">
             <figcaption>Modern climbing equipment</figcaption>
             </figure>
                 <p>
@@ -53,8 +53,8 @@
                 here in the heart of Utah are the Big and Little Cottonwood canyons. These canyons contain smooth steep
                 quartzite rock faces that reach several hundred, all contanying thousands of set climbing routes.
             </p>
-            <figure>
-                <img src="/images/south ridge mt superior.jpeg" alt="climber on ridge" class="intext_pic">
+            <figure id="utah_img">
+                <img src="/images/south ridge mt superior.jpeg" alt="climber on ridge" class="intext_pic" id="utah_img">
                 <figcaption>A climber on the ridge of Mt. Superior in Little Cottonwood Canyon.</figcaption>
             </figure>
             <p>
@@ -69,7 +69,7 @@
         <div id="contact_content" class="hidden">
             <h2>Contact</h2>
             <figure>
-                <img src="/images/me.jpg" alt="me" id="intext_pic">
+                <img src="/images/me.jpg" alt="me" class="intext_pic" id="me_pic">
                 <figcaption>Myself climbing in American Fork Canyon</figcaption>
             </figure>
             <ul>

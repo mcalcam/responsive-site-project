@@ -25,10 +25,3 @@ function showVideo() {
     document.querySelector('#contact_content').classList.add('hidden');
     document.querySelector('#video_content').classList.remove('hidden');
 }
-
-function enableDarkMode() {
-    var link = document.createAttribute('link');
-    link.rel = 'stylesheet';
-    link.href = '/css/dark_mode.css';
-    document.head.appendChild(link);
-}
